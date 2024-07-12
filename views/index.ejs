@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body class="body">
+
+    <div class="body-div">
+    <% if( locals.readA && locals.readN){%>
+        <h1 class="output">
+            <%= readA %>
+            <%= readN %>
+        </h1>
+
+   <% }else{%>
+    <h1 class="heading">Welcome to Brandgenerator 😒</h1>
+
+   <% }%>
+
+    <form action="/submit" method="post">
+        <input type="submit" value="Generate Brand name" class="inpute-butt">
+    </form>
+</div>
+    
+</body>
+</html>
